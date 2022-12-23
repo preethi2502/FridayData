@@ -1,0 +1,15 @@
+ TakesScreenshot
+	is an interface 
+	*commons io.jar file --> download 
+	  add the downloaded file in the jar file	
+	   ( buildpath --> conf.buildpath--> add extrernal jar ) 
+	FIleUtils --> jar file
+	Exception--> IO exception
+---------------------------------------------------------------
+	TakesScreenshot 
+	TakesScreenshot ts = (TakesScreenshot) driver; // narrow
+	File source = ts.getScreenshotAs(OutputType.FILE);
+	File dest = new File("path");
+	FileUtils.copyFile(source, dest);
+=---------------------------------------------------------------------------
+	***dont forget to refresh the project once done with the screenshot 
